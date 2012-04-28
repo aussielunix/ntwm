@@ -10,11 +10,13 @@ twitter:: @aussielunix
 Working in a busy, remote team I often find myself wanting to ask a team mate a question or to show then something cool.
 
 To make better use of each others time I pool up a few items and raise them in a batch the next time we catch up.
+
 Keeping track of these items is a _pita_ so I wrote this simple CLI app.
 
 == Objective
 
 This app should be a simple CLI app to record items against a name, to retrieve a list for a given name and to mark them completed.
+
 It is written in ruby and makes use of the GLI gem.  
 
 
