@@ -1,0 +1,5 @@
+= ntwm
+
+Generate this with
+    ntwm rdoc
+After you have described your command line interface
