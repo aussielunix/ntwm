@@ -5,21 +5,25 @@ If no name is given then it lists all known names.
 
 # list all item\'s listed against LH
 
-    <tt>ntwm list LH</tt>
+    <tt>ntwm list -n LH</tt>
+
+    <tt>ntwm list --name=LH</tt>
 
 # List all known names
 
     <tt>ntwm list</tt>
 
 '''
-arg_name '[name]'
-
 command [:list,:l] do |c|
+    c.desc "name of person's items you want to list."
+    c.flag [:name, :n]
+    c.default_value false
+
     c.action do |global_options,options,args|
-        if args.empty?
+        if options[:name].nil?
             puts "Listing all known names"
         else
-            puts "listing items stored against #{args[0]}"
+            puts "listing items stored against #{options[:name]}"
         end
     end
 end
