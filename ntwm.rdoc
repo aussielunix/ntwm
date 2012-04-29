@@ -13,8 +13,33 @@ These options are available for any command and are specified before the name of
 
 [<tt>--help</tt>] Show this message
 == Commands
+[<tt>done</tt>] Mark an item as done.
 [<tt>help</tt>] Shows list of commands or help for one command
+[<tt>list</tt>] List known names or List items stored against a name.
+[<tt>new</tt>] Add an item to a person's list for the next time you talk to them.
 
+=== <tt>done </tt>
+
+Mark an item as done.
+
+
+This is used to mark items as completed after you have caught up with that person.
+
+# Mark an item in LH's list as done
+
+# You must enclose the item with quote marks (double or single).
+
+    <tt>ntwm done -n LH "demo new feature"</tt>
+
+    <tt>ntwm done -n LH 'ask for code review'</tt>
+
+
+
+
+==== Options
+These options are specified *after* the command.
+
+[<tt>--name, -n arg</tt>] name of person to remove item(s) from.
 === <tt>help [command]</tt>
 
 Shows list of commands or help for one command
@@ -25,3 +50,50 @@ Gets help for the application or its commands.  Can also list the commands in a 
 These options are specified *after* the command.
 
 [<tt>-c, --completion</tt>] List all commands one line at a time, for use with shell completion ([command] argument is partial command to match)
+=== <tt>list </tt>
+
+List known names or List items stored against a name.
+
+*Aliases*
+* <tt><b>l</b></tt>
+
+
+Retrieve a list of names in the system or a list of items stored against a name.
+If no name is given then it lists all known names.
+
+# list all item's listed against LH
+
+    <tt>ntwm list -n LH</tt>
+
+    <tt>ntwm list --name=LH</tt>
+
+# List all known names
+
+    <tt>ntwm list</tt>
+
+
+
+==== Options
+These options are specified *after* the command.
+
+[<tt>--name, -n arg</tt>] name of person's items you want to list.
+=== <tt>new item_to_add</tt>
+
+Add an item to a person's list for the next time you talk to them.
+
+
+
+# add an item to LH's list
+
+# You must enclose the item with quote marks (double or single).
+
+    <tt>ntwm new -n LH "demo new feature"</tt>
+
+    <tt>ntwm new -n LH "ask for code review"</tt>
+
+
+
+==== Options
+These options are specified *after* the command.
+
+[<tt>--name, -n arg</tt>] name of person to list item against.
