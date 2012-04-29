@@ -1,18 +1,14 @@
 # Ensure we require the local version and not one we might have installed already
-require File.join([File.dirname(__FILE__),'lib','ntwm_version.rb'])
-spec = Gem::Specification.new do |s| 
+require File.join([File.dirname(__FILE__),'lib','ntwm', 'version.rb'])
+spec = Gem::Specification.new do |s|
   s.name = 'ntwm'
   s.version = Ntwm::VERSION
-  s.author = 'Your Name Here'
-  s.email = 'your@email.address.com'
-  s.homepage = 'http://your.website.com'
+  s.author = 'Mick Pollard'
+  s.email = 'aussielunix@gmail.com'
+  s.homepage = 'http://www.lunix.com.au'
   s.platform = Gem::Platform::RUBY
-  s.summary = 'A description of your project'
-# Add your other files here if you make them
-  s.files = %w(
-bin/ntwm
-lib/ntwm_version.rb
-  )
+  s.summary = "Next Time We Meet - record things against a person's name for discussion next time you catch up."
+  s.files = Dir.glob("{bin,lib}/**/*")
   s.require_paths << 'lib'
   s.has_rdoc = true
   s.extra_rdoc_files = ['README.rdoc','ntwm.rdoc']
