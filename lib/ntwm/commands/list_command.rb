@@ -3,13 +3,9 @@ long_desc '''
 Retrieve a list of names in the system or a list of items stored against a name.
 If no name is given then it lists all known names.
 
-# add an item to LH\'s list
-
-    <tt>ntwm new LH "demo new feature"</tt>
-
 # list all item\'s listed against LH
 
-    <tt>mtwm list LH</tt>
+    <tt>ntwm list LH</tt>
 
 # List all known names
 
