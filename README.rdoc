@@ -2,7 +2,7 @@
 
 Author::  Mick Pollard (aussielunix at g mail dot com)
 Copyright:: Copyright (c) 2012 by Mick Pollard
-License:: Distributes under the Apache License, see LICENSE.txt in the source distro
+License:: Distributed under the Apache License, see COPYING
 twitter:: @aussielunix
 
 == Intro
